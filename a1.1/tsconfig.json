@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+      "target": "es6",           // Target ECMAScript version
+      "module": "commonjs",      // Module system
+      "strict": true,            // Enable all strict type-checking options
+      "esModuleInterop": true,   // Enable compatibility with CommonJS modules
+      "outDir": "./dist",        // Output directory for compiled files
+      "rootDir": "./",           // Root directory of TypeScript source files
+      "noImplicitAny": true,     // Report errors on expressions with an implicit 'any' type
+      "lib": ["es2015", "dom"]   // Include ES2015 features and DOM typings
+  },
+  "include": [
+      "ClassDirectory.ts"                     // Include all TypeScript files in the project directory
+  ],
+  "exclude": [
+      "node_modules",            // Exclude node_modules directory
+      "dist"                     // Exclude output directory
+  ]
+}
