@@ -1,0 +1,14 @@
+<div *ngIf="books && books.length > 0; else noBooks">
+    <div *ngFor="let book of books">
+      <app-book-item 
+        [book]="book" 
+        (editEvent)="edit($event)" 
+        (deleteEvent)="delete($event)">
+      </app-book-item>
+    </div>
+  </div>
+  
+  <ng-template #noBooks>
+    <p>No books available.</p>
+  </ng-template>
+  
